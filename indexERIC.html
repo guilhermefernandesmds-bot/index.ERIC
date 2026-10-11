@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Milton Santos e a Globalização Brasileira</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f7;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d3557;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .autor {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    h2 {
+      color: #1d3557;
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 17px;
+      margin-bottom: 22px;
+    }
+
+    .controles {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 13px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #1d3557;
+      color: white;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
+
+    #status {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 15px auto;
+        padding: 10px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>MILTON SANTOS E A GLOBALIZAÇÃO BRASILEIRA</h1>
+
+      <div class="autor">
+        Milton Santos
+      </div>
+
+      <div class="controles">
+        <button onclick="iniciarLeitura()">🔊 Ouvir texto</button>
+        <button onclick="pararLeitura()">⏹ Parar</button>
+      </div>
+
+      <div id="status">
+        Clique em "Ouvir texto" para começar.
+      </div>
+
+      <h2>O que é a globalização segundo Milton Santos?</h2>
+
+      <p>
+        Milton Santos, um dos maiores pensadores brasileiros, explicava a globalização em três partes. A primeira é a globalização como fábula: a ideia, espalhada pela mídia, de que o mundo está cada vez mais unido e que todos vivem melhor. A segunda é a globalização como perversidade: a realidade de fato, marcada por desemprego, fome e desigualdade, já que nem todos os países entram nesse processo do mesmo jeito. A terceira é uma outra globalização: a possibilidade de um mundo mais solidário, pensado a partir das pessoas comuns, e não só das grandes empresas.
+      </p>
+
+      <h2>Como a globalização transforma o território brasileiro</h2>
+
+      <p>
+        Para Milton Santos, a globalização não chega do mesmo jeito a todo lugar do Brasil. Ela cria o que ele chamou de "meio técnico-científico-informacional": regiões com muita tecnologia, agronegócio moderno e conexão rápida com o mundo, como certas áreas do Centro-Oeste e das grandes capitais. Ao lado dessas áreas mais conectadas, existem regiões que ficam de fora desse progresso, com menos investimento e infraestrutura. Assim, a globalização aumenta as diferenças dentro do próprio país, e não só entre nações ricas e pobres.
+      </p>
+
+      <p>
+        Mesmo mostrando os lados ruins da globalização, Milton Santos não desistia de imaginar algo melhor. Ele defendia que o Brasil e outros países do chamado Sul Global tinham um papel importante: transformar a periferia em centro de uma nova forma de pensar, valorizando a cultura local, os movimentos sociais e as soluções criadas pelas próprias pessoas. Para ele, essa seria uma globalização "de baixo para cima", mais humana e mais justa do que a globalização comandada apenas pelas grandes potências e empresas.
+      </p>
+
+      <p>
+        As ideias de Milton Santos ajudam a entender por que a globalização traz tanto oportunidades quanto desigualdades para o Brasil. Elas mostram que o país não precisa apenas aceitar as regras impostas de fora: pode também construir seu próprio caminho dentro desse processo, mais justo e mais atento às pessoas.
+      </p>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    const texto = `
+      Milton Santos e a globalização brasileira.
+
+      O que é a globalização segundo Milton Santos?
+
+      Milton Santos, um dos maiores pensadores brasileiros, explicava a globalização em três partes.
+
+      A primeira é a globalização como fábula: a ideia, espalhada pela mídia, de que o mundo está cada vez mais unido e que todos vivem melhor.
+
+      A segunda é a globalização como perversidade: a realidade de fato, marcada por desemprego, fome e desigualdade, já que nem todos os países entram nesse processo do mesmo jeito.
+
+      A terceira é uma outra globalização: a possibilidade de um mundo mais solidário, pensado a partir das pessoas comuns, e não só das grandes empresas.
+
+      Como a globalização transforma o território brasileiro.
+
+      Para Milton Santos, a globalização não chega do mesmo jeito a todo lugar do Brasil. Ela cria o que ele chamou de meio técnico-científico-informacional: regiões com muita tecnologia, agronegócio moderno e conexão rápida com o mundo, como certas áreas do Centro-Oeste e das grandes capitais.
+
+      Ao lado dessas áreas mais conectadas, existem regiões que ficam de fora desse progresso, com menos investimento e infraestrutura. Assim, a globalização aumenta as diferenças dentro do próprio país, e não só entre nações ricas e pobres.
+
+      Mesmo mostrando os lados ruins da globalização, Milton Santos não desistia de imaginar algo melhor. Ele defendia que o Brasil e outros países do chamado Sul Global tinham um papel importante: transformar a periferia em centro de uma nova forma de pensar, valorizando a cultura local, os movimentos sociais e as soluções criadas pelas próprias pessoas.
+
+      Para ele, essa seria uma globalização de baixo para cima, mais humana e mais justa do que a globalização comandada apenas pelas grandes potências e empresas.
+
+      As ideias de Milton Santos ajudam a entender por que a globalização traz tanto oportunidades quanto desigualdades para o Brasil. Elas mostram que o país não precisa apenas aceitar as regras impostas de fora: pode também construir seu próprio caminho dentro desse processo, mais justo e mais atento às pessoas.
+    `;
+
+    function iniciarLeitura() {
+
+      if (!window.speechSynthesis) {
+        document.getElementById("status").textContent =
+          "Seu navegador não suporta leitura de texto.";
+        return;
+      }
+
+      speechSynthesis.cancel();
+
+      const fala = new SpeechSynthesisUtterance(texto);
+
+      fala.lang = "pt-BR";
+      fala.rate = 0.88;
+      fala.pitch = 1;
+
+      const vozes = speechSynthesis.getVoices();
+
+      let voz = vozes.find(function(v) {
+        return v.lang === "pt-BR";
+      });
+
+      if (!voz) {
+        voz = vozes.find(function(v) {
+          return v.lang.toLowerCase().startsWith("pt");
+        });
+      }
+
+      if (voz) {
+        fala.voice = voz;
+      }
+
+      fala.onstart = function() {
+        document.getElementById("status").textContent =
+          "🔊 Leitura em andamento...";
+      };
+
+      fala.onend = function() {
+        document.getElementById("status").textContent =
+          "✅ Leitura concluída.";
+      };
+
+      fala.onerror = function() {
+        document.getElementById("status").textContent =
+          "⚠️ Erro ao iniciar a leitura.";
+      };
+
+      speechSynthesis.speak(fala);
+    }
+
+    function pararLeitura() {
+
+      if (window.speechSynthesis) {
+        speechSynthesis.cancel();
+      }
+
+      document.getElementById("status").textContent =
+        "⏹ Leitura interrompida.";
+    }
+
+  </script>
+
+</body>
+</html>
